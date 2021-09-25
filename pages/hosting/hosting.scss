@@ -1,0 +1,91 @@
+.hosting {
+  min-height: 100vh;
+  //   width: 100vh;
+  width: calc(100% - 165px);
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #494399;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .image-background {
+    width: 72%;
+    height: 200px;
+    background-color: #72efe9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    .hosting-image {
+      width: 80%;
+      height: 420px;
+      background-image: url(../images/hosting.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .hosting-text {
+    max-width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 100px;
+
+    h1 {
+      color: white;
+      //   margin-bottom: 30px;
+    }
+
+    p {
+      min-height: 100px;
+      text-align: center;
+      color: white;
+      font-family: OrbReg;
+      //   margin-bottom: -30px;
+      margin-top: 20px;
+    }
+
+    .learn-more-button {
+      text-decoration: none;
+      background-color: #72efe9;
+      color: #494399;
+      padding: 15px;
+      border-radius: 65px;
+      margin-top: 20px;
+    }
+
+    a:hover {
+      background-color: white;
+      color: #494399;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .hosting {
+    .image-background {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hosting {
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hosting {
+    .hosting-text {
+      p {
+        width: 90%;
+      }
+    }
+  }
+}

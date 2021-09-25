@@ -1,0 +1,125 @@
+.data {
+  min-height: 100vh;
+  //   width: 100vh;
+  width: calc(100% - 165px);
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #494399;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .data-holder1 {
+    height: 420px;
+    width: 60%;
+    // background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .blue-bar {
+      height: 170px;
+      width: 23%;
+      background-color: #72efe9;
+    }
+
+    .data-image {
+      height: 420px;
+      width: 77%;
+      background-image: url(../images/data.jpg);
+      background-position: right;
+      background-size: cover;
+
+      h1 {
+        color: white;
+        font-size: 55px;
+        padding-left: 5px;
+        margin-top: -60px;
+      }
+    }
+  }
+
+  .data-holder2 {
+    height: 465px;
+    width: 35%;
+    // background-color: purple;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .data-text-holder {
+      h2 {
+        color: #bdbfed;
+      }
+
+      p {
+        font-size: 12px;
+        width: 250px;
+        margin-left: 48px;
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        margin-left: 48px;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .data {
+    .data-holder1 {
+      .data-image {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  .data {
+    flex-direction: column;
+    .data-holder1 {
+      margin-top: 150px;
+      width: 100%;
+      .data-image {
+        h1 {
+          font-size: 25px;
+          margin-top: -45px;
+        }
+      }
+    }
+
+    .data-holder2 {
+      margin-top: 80px;
+      margin-bottom: 80px;
+      width: 46%;
+      padding-right: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .data {
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .data {
+    .data-holder1 {
+      .data-image {
+        background-position: 345px;
+      }
+    }
+
+    .data-holder2 {
+      margin-left: -120px;
+    }
+  }
+}
